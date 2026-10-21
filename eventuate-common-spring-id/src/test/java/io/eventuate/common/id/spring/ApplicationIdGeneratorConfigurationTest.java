@@ -1,22 +1,21 @@
-package io.eventuate.common.micronaut.id;
-
+package io.eventuate.common.id.spring;
 
 import io.eventuate.common.id.ApplicationIdGenerator;
 import io.eventuate.common.id.IdGenerator;
-import io.micronaut.test.annotation.MicronautTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
-import jakarta.inject.Inject;
+@SpringBootTest(classes = IdGeneratorConfiguration.class)
+public class ApplicationIdGeneratorConfigurationTest {
 
-@MicronautTest
-public class ApplicationIdGeneratorFactoryTest {
-
-  @Inject
+  @Autowired
   private IdGenerator idGenerator;
 
   @Test
   public void testThatApplicationIdGeneratorIsUsed() {
     Assertions.assertEquals(ApplicationIdGenerator.class, idGenerator.getClass());
   }
+
 }

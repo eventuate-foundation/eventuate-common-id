@@ -1,4 +1,4 @@
-package io.eventuate.common.spring.id;
+package io.eventuate.common.id.spring;
 
 import org.springframework.boot.autoconfigure.condition.ConditionOutcome;
 import org.springframework.boot.autoconfigure.condition.SpringBootCondition;

@@ -1,4 +1,4 @@
-package io.eventuate.common.spring.id;
+package io.eventuate.common.id.spring;
 
 import io.eventuate.common.id.IdGenerator;
 import io.eventuate.common.id.DatabaseIdGenerator;

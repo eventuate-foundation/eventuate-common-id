@@ -1,4 +1,4 @@
-package io.eventuate.common.micronaut.id;
+package io.eventuate.common.id.micronaut;
 
 
 import io.eventuate.common.id.IdGenerator;
